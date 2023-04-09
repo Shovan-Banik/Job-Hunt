@@ -1,26 +1,26 @@
 [
     {
       "title": "Account & Finance",
-      "img": "https://i.postimg.cc/NFdy5X0P/5985765.png",
-      "numberOfPost": 300,
+      "img": "https://i.postimg.cc/gk4tX2hh/accounts-1.png",
+      "numberOfPost": "300 Jobs Available",
       "id":1
     },
     {
       "title": "Creative Design",
-      "img": "https://i.postimg.cc/zGFfBWPw/creative.jpg",
-      "numberOfPost": 100,
+      "img": "https://i.postimg.cc/3JwVZGY1/business-1.png",
+      "numberOfPost": "100+ Jobs Available",
       "id":2
     },
     {
       "title": "Marketing & Sales",
-      "img": "https://i.postimg.cc/zGbjYzt1/icon.png",
-      "numberOfPost": 150,
+      "img": "https://i.postimg.cc/tC5P91xK/chip-1.png",
+      "numberOfPost": "150 Jobs Available",
       "id":3
     },
     {
       "title": "Engineering Job",
-      "img": "https://i.postimg.cc/J7Y4HMqg/1875226.png",
-      "numberOfPost": 224,
+      "img":  "https://i.postimg.cc/hvHSB10L/social-media-1.png",
+      "numberOfPost": "224 Jobs Available",
       "id":4
     }
   ]

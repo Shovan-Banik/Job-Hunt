@@ -8,7 +8,7 @@ import {
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
-        <div className='bg-gray-100'>
+        <div className='bg-gradient-to-r from-purple-50 to-purple-100'>
             <div className='px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-16 lg:px-2'>
                 <div className='relative flex items-center justify-between'>
                     {/* Logo Section */}
