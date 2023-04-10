@@ -11,17 +11,21 @@ import Statistics from './components/Statistics';
 import AppliedJobs from './components/AppliedJobs';
 import Blog from './components/Blog';
 import ErrorPage from './components/ErrorPage';
+import { jobsAndCartData } from './loader/getCart&JobData';
 
 const router=createBrowserRouter([
   {
     path:'/',
     element:<App></App>,
     errorElement:<ErrorPage></ErrorPage>,
+    loader:jobsAndCartData,
     children:[
       {
         path: '/',
         element:<Home></Home>,
-        loader: ()=>fetch('categories.json')
+        loader: ()=>fetch('categories.json'),
+        // loader:()=>fetch('jobs.json')
+        
       },
       {
         path: 'statistics',
