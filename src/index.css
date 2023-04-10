@@ -13,10 +13,6 @@
     @apply text-white bg-gradient-to-r from-indigo-500 to-indigo-900 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-lg px-5 py-2 text-center mr-2 mb-2
   }
   
-  .badge{
-    @apply inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-yellow-400
-  }
-  
   .active{
     @apply font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400
   }

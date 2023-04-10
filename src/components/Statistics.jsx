@@ -1,23 +1,8 @@
 import React from 'react';
-// import { useLoaderData } from 'react-router-dom';
-// import { RadialBarChart, RadialBar, Legend, ResponsiveContainer } from 'recharts';
-import {
-    ComposedChart,
-    Line,
-    Area,
-    Bar,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip,
-    Legend,
-    Scatter,
-    ResponsiveContainer,
-  } from 'recharts';
+import { RadialBarChart, RadialBar, Legend, ResponsiveContainer,Tooltip } from 'recharts';
+
 
 const Statistics = () => {
-    // const assignments=useLoaderData();
-    // console.log(assignments);
     const assignments=[
         { id: "a123", assignmentTitle: "Simple HTML Project", assignmentMark: 60, assignmentNo: 1, fill: "#ca8a04" },
         { id: "b456", assignmentTitle: "Responsive Architect Website", assignmentMark: 60, assignmentNo: 2, fill: "#65a30d" },
@@ -29,51 +14,29 @@ const Statistics = () => {
         { id: "h234", assignmentTitle: "Knowledge Cafe Using React", assignmentMark: 60, assignmentNo: 8, fill: "#22d3ee" }
       ]
       
-    // const style = {
-    //     top: '50%',
-    //     right: 0,
-    //     transform: 'translate(0, -50%)',
-    //     lineHeight: '24px',
-    //   };
+    const style = {
+        top: '50%',
+        right: 1,
+        transform: 'translate(0, -50%)',
+        lineHeight: '48px',
+      };
     return (
-        // <div>
-        //    <ResponsiveContainer width="100%" height="100%">
-        //     <RadialBarChart cx="50%" cy="50%" innerRadius="10%" outerRadius="80%" barSize={10} data={assignments}>
-        //         <RadialBar
-        //          minAngle={15}
-        //          label={{ position: 'insideStart', fill: '#fff'}}
-        //          background
-        //          clockWise
-        //          dataKey="assignmentMark"
-        //         />
-        //         <Legend iconSize={10} layout="vertical" verticalAlign="middle" wrapperStyle={style} />
-        //     </RadialBarChart>
-        //    </ResponsiveContainer>
-        // </div>
-        <div>
-            <ResponsiveContainer width="100%" height="100%">
-                <ComposedChart 
-                 width={500}
-                 height={400}
-                 data={assignments}
-                 margin={{
-                   top: 20,
-                   right: 20,
-                   bottom: 20,
-                   left: 20,
-                 }}
-                >
-                <CartesianGrid stroke="#ef4444" />
-                <XAxis dataKey="assignmentTitle" scale="band"/>
-                <YAxis/>
-                <Tooltip></Tooltip>
-                <Legend></Legend>
-                {/* <Area type="monotone" dataKey="assignmentTitle" fill="#84cc16" stroke="#22d3ee" /> */}
-                <Bar dataKey="assignmentMark" barSize={20} fill="#9333ea" />
-                {/* <Scatter dataKey="cnt" fill="red" /> */}
-                </ComposedChart>
-            </ResponsiveContainer>
+        <div className='pt-36 md:4 my-container h-500'>
+           <ResponsiveContainer width="100%" aspect={3}>
+            <RadialBarChart cx="50%" cy="50%" innerRadius="10%" outerRadius="80%" barSize={20} data={assignments}>
+                <RadialBar
+                 minAngle={15}
+                 label={{ position: 'insideStart', fill: '#fff'}}
+                 background
+                 clockWise
+                 dataKey="assignmentMark"
+                />
+                <Tooltip/>
+                <Legend iconSize={20} layout="vertical" verticalAlign="middle" wrapperStyle={style} />
+            </RadialBarChart>
+           </ResponsiveContainer>
         </div>
+        
     );
 };
 
