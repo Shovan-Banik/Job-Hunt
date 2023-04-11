@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='mb-12'>
+        <div className='mb-12 md:grid md:grid-cols-2 gap-5 my-container'>
             <div className='bg-purple-50 my-container mt-12 text-justify rounded-xl shadow-lg hover:bg-pink-50'>
                 <h4 className='text-xl font-bold py-5 px-4'>when should you use context api?</h4>
                 <p className='pb-5 px-4 hover:font-medium transition duration-1000'>The Context API in React is a way to share data across the component tree without passing props down manually at every level. I should consider using the Context API when:

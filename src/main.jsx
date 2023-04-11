@@ -26,22 +26,28 @@ const router=createBrowserRouter([
         loader: jobsLoader
       },
       {
-        path:'/detail/:id',
-        element:<JobDetails></JobDetails>,
-        loader:({params})=>jobDetailsLoader(params.id)
-      },
-      {
         path: 'statistics',
         element: <Statistics></Statistics>,
       },
       {
         path:'applied',
-        element: <AppliedJobs></AppliedJobs>
+        element: <AppliedJobs></AppliedJobs>,
+        loader:jobsLoader
       },
       {
         path: 'blog',
         element: <Blog></Blog>
-      }
+      },
+      {
+        path:'detail/:id',
+        element:<JobDetails applied={false}></JobDetails>,
+        loader:({params})=>jobDetailsLoader(params.id)
+      },
+      {
+        path:'applied/job-details/:jobId',
+        element:<JobDetails applied={true}></JobDetails>,
+        loader:({params})=>jobDetailsLoader(params.jobId)
+      },
     ]
   }
 ])

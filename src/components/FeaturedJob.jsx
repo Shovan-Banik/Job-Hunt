@@ -16,9 +16,9 @@ const FeaturedJob = ({ showedJob }) => {
                 <button className='border border-indigo-300 text-indigo-600 px-3 font-medium text-sm py-1 rounded-lg bg-none disabled'>{remote_or_onsite}</button>
                 <button className='border border-indigo-300 text-indigo-600 px-3 font-medium text-sm py-1 rounded-lg bg-none disabled'>{full_or_part_time}</button>
             </div>
-            <div className='flex items-center my-2'>
-                <MapPinIcon className='w-4 h-4'></MapPinIcon><p className='mr-8 text-gray-400'>{location}</p>
-                <CurrencyDollarIcon className='w-4 h-4'></CurrencyDollarIcon><p className='text-gray-400'>{salary}</p>
+            <div className='md:flex my-2 md:item-center'>
+                <span className='flex items-center gap-2'><MapPinIcon className='w-4 h-4'></MapPinIcon><p className='mr-8 text-gray-400'>{location}</p></span>
+                <span className='flex items-center gap-2'><CurrencyDollarIcon className='w-4 h-4'></CurrencyDollarIcon><p className='text-gray-400'>{salary}</p></span>
             </div>
             <Link to={`/detail/${id}`}><button className='btn2 my-2'>View Details</button></Link>
         </div>

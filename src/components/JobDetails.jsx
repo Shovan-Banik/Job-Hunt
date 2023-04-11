@@ -1,22 +1,22 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { addToDb, getAppliedList } from '../utilities/fakeDB';
 import toast from 'react-hot-toast';
 import Banner from './Banner';
-import { MapPinIcon, CurrencyDollarIcon, BriefcaseIcon, PhoneIcon, AtSymbolIcon } from '@heroicons/react/24/solid';
+import { MapPinIcon, CurrencyDollarIcon, BriefcaseIcon, PhoneIcon } from '@heroicons/react/24/solid';
 import { AppliedJobContext } from '../App';
 
 
 
-const JobDetails = () => {
+const JobDetails = ({ applied }) => {
     const job = useLoaderData();
     const { id, title, salary, jobDescription, jobResponsibility, img, experiences, phone, email, educationalRequirements, address, company } = job;
     const [appliedJobs, setAppliedJobs] = useContext(AppliedJobContext);
 
     const addAppliedJobs = () => {
-        const appliedListDb = getAppliedList();
+        const appliedListsDb = getAppliedList();
         let toastShown = false;
-        for (const id in appliedListDb) {
+        for (const id in appliedListsDb) {
             if (id === job.id && (!toastShown)) {
                 toast('you have already applied 🔥');
                 toastShown = true;
@@ -95,7 +95,7 @@ const JobDetails = () => {
                         <button onClick={() => {
                             addAppliedJobs()
                             addToDb(id)
-                        }} className='btn2 w-full mt-4'>Apply Now</button>
+                        }} className={!applied ? 'btn2 w-full' : 'btn w-full'}>{applied ? 'Applied' : 'Apply Now'}</button>
                     </div>
                 </div>
             </div>
