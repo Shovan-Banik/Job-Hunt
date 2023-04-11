@@ -53,7 +53,7 @@ const Header = () => {
                             </NavLink>
                         </li>
                     </ul>
-                    <button className='btn2'>Start Applying</button>
+                    <button className='btn2 hidden md:block'>Start Applying</button>
                     {/* Mobile Navbar Section */}
                     <div className='lg:hidden'>
                         {/* Dropdown Open Button */}

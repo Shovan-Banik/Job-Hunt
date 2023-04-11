@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "job1",
     "title": "Software Engineer",
     "location": "San Francisco, CA",
     "salary": "$120,000 - $150,000 per year",
@@ -12,11 +12,12 @@
     "jobResponsibility": "Develop, test, and maintain software products; collaborate with other team members to design and implement software solutions; troubleshoot and debug software issues; participate in code and design reviews.",
     "educationalRequirements": "Bachelor's degree in Computer Science or a related field; Master's degree preferred.",
     "experiences": "3+ years of experience in software development; experience with Java, Python, and/or C++ preferred.",
-    "jobType": "Full-time",
+    "full_or_part_time": "Full-time",
+    "remote_or_onsite": "Remote",
     "img": "https://i.postimg.cc/nhLCG0Pz/google-1-1-1.png"
   },
   {
-    "id": 2,
+    "id":"job2",
     "title": "Marketing Manager",
     "location": "New York, NY",
     "salary": "$80,000 - $100,000 per year",
@@ -28,11 +29,12 @@
     "jobResponsibility": "Develop and execute marketing plans; manage the marketing team; collaborate with other departments to ensure consistent messaging and branding; analyze marketing data and adjust strategies as needed.",
     "educationalRequirements": "Bachelor's degree in Marketing, Business Administration, or a related field; MBA preferred.",
     "experiences": "5+ years of experience in marketing; experience in B2B marketing and/or tech industry preferred.",
-    "jobType": "Remote",
+    "full_or_part_time": "Part-time",
+    "remote_or_onsite": "Onsite",
     "img": "https://i.postimg.cc/pX3LKRz0/tesla-9-1.png"
   },
   {
-    "id": 3,
+    "id": "job3",
     "title": "Graphic Designer",
     "location": "Los Angeles, CA",
     "salary": "$50,000 - $70,000 per year",
@@ -44,11 +46,12 @@
     "jobResponsibility": "Create visual content for print and digital media; collaborate with clients to understand their design needs and preferences; maintain brand consistency across all designs; stay up-to-date with design trends and software.",
     "educationalRequirements": "Bachelor's degree in Graphic Design or a related field; experience with Adobe Creative Suite and other design software.",
     "experiences": "3+ years of experience in graphic design; experience in agency or freelance work preferred.",
-    "jobType": "Per-time",
+    "full_or_part_time": "Part-time",
+    "remote_or_onsite": "Remote",
     "img": "https://i.postimg.cc/15mpb0dx/netflix-4-1.png"
   },
   {
-    "id": 4,
+    "id": "job4",
     "title": "Digital Marketing Specialist",
     "location": "Seattle, WA",
     "salary": "$60,000 - $80,000 per year",
@@ -60,11 +63,12 @@
     "jobResponsibility": "Develop and execute digital marketing campaigns, including SEO, PPC, social media, email marketing, and content marketing; collaborate with clients to understand their business goals and target audience; analyze campaign performance and adjust strategies as needed; stay up-to-date with digital marketing trends and best practices.",
     "educationalRequirements": "Bachelor's degree in Marketing, Communications, or a related field; experience with digital marketing tools and platforms.",
     "experiences": "3+ years of experience in digital marketing; experience with Google Analytics, Google Ads, and/or Facebook Ads preferred.",
-    "jobType": "Onsite",
+    "full_or_part_time": "Full-time",
+    "remote_or_onsite": "Onsite",
     "img": "https://i.postimg.cc/VNDC0XpP/Facebook-Logo.png"
   },
   {
-    "id": 5,
+    "id": "job5",
     "title": "Python Developer",
     "location": "San Francisco, CA",
     "salary": "$100,000 - $150,000 per year",
@@ -76,11 +80,12 @@
     "jobResponsibility": "Design, develop, test, and maintain software using Python; collaborate with cross-functional teams to understand business requirements and translate them into technical solutions; troubleshoot and debug software issues; participate in code reviews and contribute to team best practices.",
     "educationalRequirements": "Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field; experience with Python and related frameworks.",
     "experiences": "3+ years of experience in software development; experience with web development, database design, and cloud computing preferred.",
-    "jobType": "Full-time",
+    "full_or_part_time": "Full-time",
+    "remote_or_onsite": "Remote",
     "img": "https://i.postimg.cc/wjbkS8xm/microsoft.png"
   },
   {
-    "id": 6,
+    "id": "job6",
     "title": "Java Developer",
     "location": "New York, NY",
     "salary": "$90,000 - $120,000 per year",
@@ -92,11 +97,12 @@
     "jobResponsibility": "Design, develop, test, and maintain software using Java; collaborate with cross-functional teams to understand business requirements and translate them into technical solutions; troubleshoot and debug software issues; participate in code reviews and contribute to team best practices.",
     "educationalRequirements": "Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field; experience with Java and related frameworks.",
     "experiences": "3+ years of experience in software development; experience with enterprise software development, database design, and cloud computing preferred.",
-    "jobType": "Remote",
+    "full_or_part_time": "Full-time",
+    "remote_or_onsite": "Onsite",
     "img": "https://i.postimg.cc/kg5632Dj/ibm.png"
   },
   {
-    "id": 7,
+    "id": "job7",
     "title": "JavaScript Developer",
     "location": "Seattle, WA",
     "salary": "$80,000 - $110,000 per year",
@@ -108,11 +114,12 @@
     "jobResponsibility": "Design, develop, test, and maintain web applications using JavaScript; collaborate with cross-functional teams to understand business requirements and translate them into technical solutions; troubleshoot and debug software issues; participate in code reviews and contribute to team best practices.",
     "educationalRequirements": "Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field; experience with JavaScript and related frameworks.",
     "experiences": "3+ years of experience in web development; experience with front-end development, responsive design, and web performance optimization preferred.",
-    "jobType": "Per-time",
+    "full_or_part_time": "Full-time",
+    "remote_or_onsite": "Onsite",
     "img": "https://i.postimg.cc/s2TFnjQd/1831.png"
   },
   {
-    "id": 8,
+    "id": "job8",
     "title": "Senior React Developer",
     "location": "San Francisco, CA",
     "salary": "$120,000 - $160,000 per year",
@@ -124,7 +131,8 @@
     "jobResponsibility": "Design, develop, test, and maintain our web application using React and related technologies; collaborate with cross-functional teams to understand business requirements and translate them into technical solutions; troubleshoot and debug software issues; participate in code reviews and contribute to team best practices.",
     "educationalRequirements": "Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field; experience with React and related technologies.",
     "experiences": "5+ years of experience in web development; experience with front-end development, responsive design, and web performance optimization preferred.",
-    "jobType": "Onsite",
+    "full_or_part_time": "part-time",
+    "remote_or_onsite": "Remote",
     "img": "https://i.postimg.cc/6Q2ShrXR/Tech-co-Logo.png"
   }
 ]

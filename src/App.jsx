@@ -1,20 +1,22 @@
-import React, { createContext } from 'react';
+import React, { createContext, useState } from 'react';
 import Header from './components/Header';
-import { Outlet, useLoaderData } from 'react-router-dom';
+import { Outlet} from 'react-router-dom';
 
-export const JobContext=createContext([]);
-//export const CartContext=createContext([]);
+export const AppliedJobContext = createContext([]);
+export const AvailableJobContext = createContext([]);
 
 const App = () => {
-  const {jobs}=useLoaderData()
-  // console.log(jobs);
+  const [availableJobs, setAvailableJobs] = useState([]);
+  const [appliedJobs, setAppliedJobs] = useState([]);
+
   return (
-    <JobContext.Provider value={jobs}>
-      <Header></Header>
-      <Outlet></Outlet>
-    </JobContext.Provider>
-      
-    
+    <AvailableJobContext.Provider value={[availableJobs, setAvailableJobs]}>
+      <AppliedJobContext.Provider value={[appliedJobs, setAppliedJobs]}>
+        <Header></Header>
+        <Outlet></Outlet>
+      </AppliedJobContext.Provider>
+
+    </AvailableJobContext.Provider>
   );
 };
 

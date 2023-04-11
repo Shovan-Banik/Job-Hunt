@@ -21,7 +21,7 @@ const Statistics = () => {
         lineHeight: '48px',
       };
     return (
-        <div className='pt-36 md:4 my-container h-500'>
+        <div className='pt-36 md:pt-8 my-container'>
            <ResponsiveContainer width="100%" aspect={3}>
             <RadialBarChart cx="50%" cy="50%" innerRadius="10%" outerRadius="80%" barSize={20} data={assignments}>
                 <RadialBar
