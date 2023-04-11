@@ -18,7 +18,7 @@ const addToDb = id => {
   const getAppliedList = () => {
     let appliedList = {};
   
-    // get the shopping cart from local storage
+    // get the list from local storage
     const storedAppliedList = localStorage.getItem('applied-list');
     if (storedAppliedList) {
       appliedList = JSON.parse(storedAppliedList);
