@@ -10,3 +10,4 @@
 * Using various type loops like for-in, find, filter for sorted data
 * Using 404 Page for error handling 
 * Using _redirect page for handle error in Netlify
+* Using HeadlessUi for footer design
