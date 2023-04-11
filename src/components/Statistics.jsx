@@ -24,7 +24,7 @@ const Statistics = () => {
   return (
     <>
     <Banner>Statistics</Banner>
-    <div className='pt-36 md:pt-8 my-container'>
+    <div className='py-48 md:py-8 my-container'>
       <ResponsiveContainer width="100%" aspect={3}>
         <RadialBarChart cx="50%" cy="50%" innerRadius="10%" outerRadius="80%" barSize={20} data={assignments}>
           <RadialBar
@@ -35,7 +35,7 @@ const Statistics = () => {
             dataKey="assignmentMark"
           />
           <Tooltip />
-          <Legend iconSize={20} layout="vertical" verticalAlign="left" wrapperStyle={style} />
+          <Legend iconSize={20} layout="vertical" verticalAlign="middle" wrapperStyle={style} />
         </RadialBarChart>
       </ResponsiveContainer>
     </div>
