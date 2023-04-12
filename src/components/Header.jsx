@@ -8,8 +8,9 @@ import {
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
-        <div className='bg-gradient-to-r from-purple-50 to-purple-100'>
-            <div className='px-8 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-2'>
+        <>
+        <div className='bg-gradient-to-r from-purple-50 to-purple-100 md:px-48'>
+            <div className='px-8 md:py-5 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-2'>
                 <div className='relative flex items-center justify-between'>
                     {/* Logo Section */}
                     <Link to='/' className='inline-flex items-center'>
@@ -20,14 +21,14 @@ const Header = () => {
 
                     {/* Nav Items Section */}
                     <ul className='items-center hidden space-x-12 lg:flex text-xl'>
-                        {/* <li>
+                        <li>
                             <NavLink
                                 to='/'
                                 className={({ isActive }) => (isActive ? 'active' : 'default')}
                             >
                                 Home
                             </NavLink>
-                        </li> */}
+                        </li>
                         <li>
                             <NavLink
                                 to='/statistics'
@@ -62,7 +63,7 @@ const Header = () => {
                             title='Open Menu'
                             onClick={() => setIsMenuOpen(true)}
                         >
-                            <Bars3BottomRightIcon className='w-5 text-gray-600' />
+                            <Bars3BottomRightIcon className='w-5 text-gray-600 absolute z-10'/>
                         </button>
                         {isMenuOpen && (
                             <div className='absolute top-0 left-0 w-full z-10'>
@@ -90,11 +91,11 @@ const Header = () => {
                                     {/* Mobile Nav Items Section */}
                                     <nav>
                                         <ul className='space-y-4'>
-                                            {/* <li>
+                                            <li>
                                                 <Link to='/' className='default'>
                                                     Home
                                                 </Link>
-                                            </li> */}
+                                            </li>
                                             <li>
                                                 <Link
                                                     to='/statistics'
@@ -128,6 +129,7 @@ const Header = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

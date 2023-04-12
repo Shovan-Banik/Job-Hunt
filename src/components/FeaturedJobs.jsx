@@ -4,13 +4,12 @@ import FeaturedJob from './FeaturedJob';
 
 const FeaturedJobs = () => {
     const [availableJobs,setAvailableJobs]=useContext(AvailableJobContext);
-    console.log(availableJobs);
     const [showMore,setShowMore]=useState(false);
     const showedJobs=showMore ? availableJobs.slice() : availableJobs.slice(0,4);
     return (
         <div>
              <div className='my-container text-center mt-12'>
-                <h1 className='md:text-7xl text-5xl font-bold md:pt-16'>Featured Jobs</h1>
+                <h1 className='text-5xl font-bold md:pt-16'>Featured Jobs</h1>
                 <p className='text-xl text-gray-500 my-8'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
             <div className='my-container md:grid md:grid-cols-2 gap-12 mb-12'>

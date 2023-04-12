@@ -17,12 +17,12 @@ const AppliedJob = ({shownJob}) => {
           <button className='job-type-btn'>{remote_or_onsite}</button>
           <button className='job-type-btn'>{full_or_part_time}</button>
         </div>
-        <div className='flex gap-3 mt-1'>
-          <div className='flex items-center'>
+        <div className='flex flex-col md:flex-row gap-3 mt-1'>
+          <div className='flex  items-center'>
             <MapPinIcon className="h-5 w-5 text-gray-500" />
             <p className='text-sm text-gray-500'>{location}</p>
           </div>
-          <div className='flex items-center'>
+          <div className='flex  items-center'>
             <CurrencyDollarIcon className="h-5 w-5 text-gray-500 mr-1" />
             <p className='text-sm text-gray-500'>Salary: {salary}</p>
           </div>

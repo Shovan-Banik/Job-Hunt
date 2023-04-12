@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
     return (
-      <footer className="bg-black pt-20 px-10 mt-12">
+      <footer className="bg-black pt-20 my-container mt-12">
         <div className="max-w-7xl px-4 mx-auto sm:px-6 md:px-8 text-gray-300">
-          <ul className="flex flex-wrap justify-center text-lg font-light">
+          <ul className="flex flex-wrap justify-between text-lg font-light">
             <li className="w-1/2 md:w-1/4 lg:w-1/5 mb-10">
               <div className="">
                 <h1 className="text-white font-medium text-3xl mb-4">Job Hunt</h1>

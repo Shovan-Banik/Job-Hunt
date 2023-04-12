@@ -5,9 +5,11 @@
 * Using Tailwind for Style
 * Using Hot toast for alert
 * Using async loader for fetch data
-* Using chart for statistics
+* Using Rechart for statistics
 * Using fakeDB for store and get data from local storage
 * Using various type loops like for-in, find, filter for sorted data
 * Using 404 Page for error handling 
 * Using _redirect page for handle error in Netlify
 * Using HeadlessUi for footer design
+
+* Live link: https://assignment-9-job-hunt.netlify.app/

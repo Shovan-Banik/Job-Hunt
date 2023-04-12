@@ -16,26 +16,28 @@ const Statistics = () => {
   ]
 
   const style = {
-    top: '50%',
+    top: '0%',
     right: 1,
-    transform: 'translate(0, -50%)',
-    lineHeight: '48px',
+    transform: 'translate(0, -80%)',
+    lineHeight: '24px',
+    marginTop:'310px'
+    
   };
   return (
     <>
     <Banner>Statistics</Banner>
     <div className='py-48 md:py-8 my-container'>
       <ResponsiveContainer width="100%" aspect={3}>
-        <RadialBarChart cx="50%" cy="50%" innerRadius="10%" outerRadius="80%" barSize={20} data={assignments}>
+        <RadialBarChart cx="50%" cy="40%" innerRadius="10%" outerRadius="80%" barSize={20} data={assignments}>
           <RadialBar
-            minAngle={15}
+            minAngle={20}
             label={{ position: 'insideStart', fill: '#fff' }}
             background
             clockWise
             dataKey="assignmentMark"
           />
           <Tooltip />
-          <Legend iconSize={20} layout="vertical" verticalAlign="middle" wrapperStyle={style} />
+          <Legend iconSize={10} layout="horizontal" verticalAlign="top" wrapperStyle={style} />
         </RadialBarChart>
       </ResponsiveContainer>
     </div>
