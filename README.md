@@ -1,3 +1,4 @@
+# Live link: https://assignment-9-job-hunt.netlify.app/
 * Using react router for set the route
 * Using context API for dynamically send data as per needed
 * Using useState hook for handle the data 
@@ -12,4 +13,3 @@
 * Using _redirect page for handle error in Netlify
 * Using HeadlessUi for footer design
 
-* Live link: https://assignment-9-job-hunt.netlify.app/
